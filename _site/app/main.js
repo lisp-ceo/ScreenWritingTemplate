@@ -9,33 +9,23 @@
 
 require.config({
 
-  shim : {
-  
-    'backbone' : {
-      
-      deps : ['underscore','jquery'],
-      exports : 'Backbone'
-
+    paths: {
+      "jquery": '../node_modules/jquery/tmp/jquery',
+      "underscore": '../node_modules/underscore/underscore', 
+      "backbone": '../node_modules/backbone/backbone',
+      "text": '../node_modules/text/text',
+      "templates": '../templates'
     },
-
-    'underscore' : {
-      exports : '_'
+    shim : {
+      'backbone' : {
+        deps : ['underscore','jquery'],
+        exports : 'Backbone'
+      },
+      'underscore' : {
+        deps    : [],
+        exports : '_'
+      }
     }
-  
-  },
-
-  paths: {
-
-    "jquery": '../node_modules/jquery/tmp/jquery',
-    "underscore": '../node_modules/underscore/underscore', 
-    "backbone": '../node_modules/backbone/backbone',
-    "text": '../node_modules/text/text',
-
-    // Just a short cut so we can put our html outside the js dir
-    // When you have HTML/CSS designers this aids in keeping them out of the js directory
-
-    "templates": '../templates'
-  }
 
 });
 

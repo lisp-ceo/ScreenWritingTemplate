@@ -10,10 +10,10 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'app/models/Node'
+  'models/Node'
 ], function( $, _, Backbone, Node ){
 
-  var Nodes = Backbone.Collections.extend({
+  var Nodes = Backbone.Collection.extend({
 
   /**
    *
@@ -21,7 +21,13 @@ define([
    *  
    */
 
-    model : Node
+    model : Node,
+
+    comparator : function( node ){
+    
+      return node.get( 'position' );
+
+    }
 
   });
 

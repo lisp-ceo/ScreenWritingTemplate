@@ -10,12 +10,12 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'app/models/Pad'
-], function( $, _, Backbone, PadModel ){
+  'text!templates/pad/Node.html'
+], function( $, _, Backbone, NodeTemplate ){
 
   var Pad = Backbone.View.extend({
 
-    el: '.textNodeContainer',
+    el  : '.textNodeContainer',
 
   /**
    *
@@ -23,23 +23,34 @@ define([
    *  
    */
 
-    initialize: function (  ) {
-      
-      this.model = new PadModel();
+    initialize: function () {
 
     },
 
-    model : PadModel, // controllerReference
-
-  /*
+  /**
    *
-   * Takes data from the controller and draws the active DOM nodes,
+   *  Takes data from the controller and draws the active DOM nodes,
    *  depenendent on where the node is
+   *
+   *  @param {Backbone.Collection} nodesCollection - Collection of nodes
+   *
+   *  @returns {string} composite - HTML to render
    *
    */
 
-    render: function () {
+    render: function ( nodesCollection ) {
 
+      var composite = '';
+
+      nodesCollection.each( function( node ){
+
+        composite = composite + _.template( NodeTemplate )({
+          node : node.attributes
+        });
+
+      }.bind( this ));
+
+      return composite;
 
     }
 
