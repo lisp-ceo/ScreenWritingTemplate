@@ -1,0 +1,34 @@
+{
+  "name": "backbone_bootstrap",
+  "version": "0.1.1",
+  "description": "Bootstrapping development code for Web Development using Backbone.js",
+  "main": "app/main.js",
+  "dependencies": {
+    "underscore": ">=1.4.x",
+    "jquery": ">=1.8.x",
+    "backbone": ">=1.0.x",
+    "requirejs": ">=2.1.x",
+    "requirejs-text": "git://github.com/requirejs/text.git#2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JamesMeldrum/backbone_bootstrap.git"
+  },
+  "keywords": [
+    "backbone",
+    "bootstrap",
+    "backbone-bootstrap",
+    "backbone_bootstrap"
+  ],
+  "author": {
+    "name": "James Meldrum"
+  },
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/JamesMeldrum/backbone_bootstrap/issues"
+  },
+  "readme": "backbone_bootstrap\n===============\n\nBackbone_bootstrap is an UNauthorized bootstrap for developing client-side\njavascript applictions.\n\n## Features\n\n  * Maintains up-to-date \n  * Out-of-the-box integration with jekyll (and clones)\n\n## Usage\n### Via GitHub\n\n  * `git clone git@github.com:JamesMeldrum/backbone_bootstrap.git myApp`\n  * `cd myApp && npm install`\n  * `jekyll  & || sudo apt-get install jekyll && jekyll &`\n  * Begin development! Make sure you look at the .gitignore and ensure it suits your needs\n  * TODO: When you're done. Go to the admin folder and run ./build.sh, ensuring you have the relevant node dependencies. Will produce 1-liner for your backone src\n\n### Via NPM\n\n  * `mkdir myApp && cd myApp`\n  * `npm install backbone_bootstrap`\n  * `cp -R node_modules/backbone_bootstrap/* .`\n  * `npm install`\n  * `jekyll  & || sudo apt-get install jekyll && jekyll &`\n  * Begin development! Make sure you look at the .gitignore and ensure it suits your needs\n  * TODO: When you're done. Go to the admin folder and run ./build.sh, ensuring you have the relevant node dependencies. Will produce 1-liner for your backone src\n\n## Technologies used:\n  * Backbone.js\n  * Require.js\n  * Twitter bootstrap\n  * TODO: Minification\n",
+  "readmeFilename": "README.md",
+  "_id": "backbone_bootstrap@0.1.1",
+  "_from": "backbone_bootstrap@*"
+}

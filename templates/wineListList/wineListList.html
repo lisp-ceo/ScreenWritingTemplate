@@ -1,0 +1,29 @@
+<h1>
+  Sommelier
+</h1>
+<br />
+<p>The Winelist builder. Please send support requests through to <a
+  href="mailto:jmeldrum@mshanken.com"> James Meldrum</a>.</p>
+
+<div id="flight-list-fields">
+  <input id="name" class="input-small" type="text" autofocus placeholder="Name">
+  <input id="winelist_id" class="input-small"  type="text" placeholder="Wine list ID">
+  <input id="description" class="input-small" type="text" placeholder="Description">
+  <a href="#detail/wlid" class="add-entity"><button class="btn" type="button"><i class="icon-plus"></i></button></a>
+</div>
+
+<div id="results">
+  
+  <table id="flightlist" class="table table-bordered table-hover table-condensed table-striped">
+    <thead id="flightlist-headings">
+      <tr>
+        <th id="name-head">Name<span class="pull-right">&#9660;</span></th>
+        <th id="winelist_id-head">Wine List ID<span class="pull-right">&#9650;</span></th>
+        <th id="description-head">Description<span class="pull-right">&#9660;</span></th>
+      </tr>
+    </thead>
+    <tbody id="flightlist-results">
+    </tbody>
+  </table>
+</div><!-- /#results -->
+

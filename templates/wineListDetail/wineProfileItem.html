@@ -1,0 +1,25 @@
+<tr class = "resultRow" id = "<%= result.wine_id || "" %>">
+  <td>
+    <input id="<%= result.wine_id %>" type = "checkbox" />
+  </td>
+  <td><%= result.wine_name || "" %></td>
+  <td><%= result.winery.name || "" %></td>
+  <td><%= result.wine_id || "" %></td>
+  <td><%= result.vintage || "" %></td>
+  <td><%= result.release_price || "" %></td>
+  <td><%= result.tasting_note_score || "" %></td>
+  <td><%
+
+    print( methods.capitalize( result.wine_color ) );
+    
+  %></td>
+  <td><% 
+
+    print( methods.capitalize( result.wine_type ) );
+
+    %></td>
+  <td><%= result.bottle_size || "" %></td>
+  <td><%= result.accolades[0] || "" %></td>
+  <td><%= result.region.name || "" %></td>
+  <td><%= result.appellations[0].name || "" %></td>
+</tr>
