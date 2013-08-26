@@ -876,16 +876,17 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
   width: 100%;
   height: 100%;
   min-height:100%;
+  background-color:rgb(252, 234, 234);
 }
 
 html, body {
   height: 100%;
+  background-color: rgba(226, 221, 230,0.5);
 }
 
 .fill {
   min-height: 100%;
   height:100%;
-  background-color:red;
 }
 
 .helpers {
@@ -900,14 +901,27 @@ html, body {
 
 #characters {
 
-  background-color: blue;
+  background-color: rgba(255, 248, 187, 0.5);
   left:0px;
 
 }
 
 #document {
 
-  background-color: green;
+  background-color: rgba(240, 223, 237,1.0);
   right:0px;
+
+}
+
+.textNodeContainer {
+
+  padding: 70px 30px;
+
+}
+
+.textNode {
+
+  padding: 30px 100px 30px 100px;
+  background-color:white;
 
 }
